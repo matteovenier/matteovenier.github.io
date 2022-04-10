@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<!-- HTML
+ Esercizi 47 e 48 a corpo singolo
+ Obbiettivi extra rispetto alla consegna base
+ 1. Unificare gli esercizi in uno solo
+ 2. Dare un adeguato aspetto al lavoro 
+ 3. Aggiungere nome e firma
+ 4. semplificare la funzione di calcolo
+ 5. EFFETTI VISIVI MAXIMUS
+-->
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popolazione Batterica</title>
+    <style>
+        .header{
+            position: absolute;
+            left: 23%; 
+            text-align: center;
+            display: inline-block;
+            padding: 20px;
+        }
+        .column{
+            float: left;
+            border-width: 3px;
+            border-color: #304c53;
+            border-style: solid;
+             border-radius: 10px;
+             padding: 20px;
+            
+        }
+        .column.side {
+         width: 40%;
+         border-left: none;
+        }
+
+         
+        .column.middle {
+          margin-left:3%;
+          width: 50%;
+          text-align: justify;
+          
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          
+        }
+
+        
+        @media screen and (max-width: 600px) {
+          .column.middle,.column.side {
+            width: 100%;
+        }
+        }
+
+        @keyframes cambottone {
+            0% {border-color: #347d4f;
+            background-color: #3dab67;}
+            50%{
+                border-color: #347d76;
+            background-color: #18648d;
+            }
+            100%{
+                border-color: #347d4f;
+            background-color: #3dab67;
+            }
+        }
+
+        body { 
+            
+            background-color: #f4f5f7;
+            margin-left: 20px; margin-right: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+            /*Crediti a transparenttextures per il file di sfondo, si prega di notificare Matteo
+            Nel caso lo sfondo sia assente*/
+        }
+        h2 { 
+            
+            color: #3fa278;
+            background-color: rgba(255, 255, 255,0.6);
+            padding: 20px;
+            white-space: inherit;
+            font-size: 40px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: #3a8252;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h3 { 
+            color: #355d63;
+        }
+        p   {
+            color: #373F51;
+        }
+        input[type=number] {
+            
+            text-align: center;
+            margin-top: 10px;
+            font-size:30px
+        }
+        input[type=button] {
+            margin-left: 30px;
+            font-size: 30px;
+            color: #ffffff;
+            border-radius: 10px;
+            border-color: #347d4f;
+            background-color: #3dab67;
+            animation: cambottone 3s linear infinite;
+        }
+        span {
+            color: #373F51;
+        }
+    </style>
+    <script type="text/javascript">
+        function batteri(){
+            var battzero = eval(document.getElementById("battzero").value);
+            var tmp = eval(document.getElementById("tmp").value);
+            var battfin = eval(document.getElementById("battfin").value);
+            document.getElementById("popofin").innerHTML = battzero*Math.pow(2,tmp/3);
+            document.getElementById("orefin").innerHTML = 3*(Math.log2(battfin/battzero));
+        }
+    </script>
+</head>
+<body>
+
+    
+    <image src="https://www.pnglib.com/wp-content/uploads/2020/08/pathogenic-bacterias_5f3e76e0dd975.png" style="width:20%; position: relative;"></image>
+    <image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fmicroscope%2Fmicroscope_PNG17.png&f=1&nofb=1" style="width:14%; position: relative;top: 55px;left: 55%;"></image>
+    <div class="header">
+        
+    <h2 style="font-size:70px">Popolazione Batterica</h2>
+    Versione 2.5
+    </div>
+    
+    <div class="row" style="font-size:20px">
+    <div class="column middle">
+    <p>
+        <image src="https://media2.giphy.com/media/qzGpDy1z9m8LGLBlJG/giphy.gif?cid=ecf05e47yoz5m396hr8qttqe75hlxuu6rbp9ceswx3tfe4wf&rid=giphy.gif&ct=g" style="margin-left:25%;border-radius: 10px;width:23%;position: absolute;top: 39%;"></image>
+        Batteri al tempo iniziale<br>
+        <input type="number" id="battzero"><br><br>
+        Tempo Trascorso (Ore) <br>
+        <input type="number" id="tmp"><br><br>
+        Popolazione Finale <br>
+        <input type="number" id="battfin"><br><br>
+        <input type="button" id="send" value="Ottieni Risultati" onclick="batteri()">
+    
+    </p>
+
+    <br>
+    <h3>Popolazione Finale date le ore: <span id="popofin"></span>
+    <br>
+    <br>Numero di Ore date le popolazioni: <span id="orefin"></span>
+    </h3>
+    <p>
+        Link utili <br>
+        <a href="https://blogs.udla.edu.ec/haccp/2017/05/25/bacteria-and-how-they-multiply/">Come si moltiplicano i batteri</a>
+     <br><br>
+     <a href="https://www.arngren.net/">Vuoi vedere come NON progettare un sito web? (La semplicità conta!)</a>
+        <br><br>
+        Vuoi vedere altre cose che ho fatto?<br>
+    <a href="https://imginn.org/uomopuma_/">I miei post di instagram</a><br>
+    </p>
+    
+
+    </div>
+
+    
+
+    <div class="column side">
+        <h3>Crescita di una popolazione di batteri data
+            <br>
+            <br>1. Popolazione Iniziale
+            <br>2. Tempo Trascorso o Popolazione Finale
+            <br><br>
+        </h3>
+        
+        <p>
+            E' possibile inserire solo una delle variabili nel punto 2, o anche entrambe.
+            Tuttavia è sempre necessario inserire la popolazione iniziale di batteri.
+            <br><br>
+            Non preoccupatevi quindi se su uno dei risultati esce NaN
+        </p>
+        <iframe width="530px" height="315px" style="border-radius: 10px;" src="https://www.youtube.com/embed/XLmk0zYIFjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <br><br>
+    <a style="position: absolute; right:5%;text-align: right;">
+        Lavoro con valutazione di informatica di Matteo Venier <br>
+        <image src="Firma.png" width=250px alt="Immagine Firma"></image>
+    </a>
+    
+</body>
+</html>
