@@ -1,6 +1,6 @@
 .container {
  margin-left:5%;margin-right:5%;
- margin-top:5%;margin-bottom:5%;
+ margin-top:10px;margin-bottom:5%;
 }
 ::selection{
     color: #92BED7; background-color: #02273D;
@@ -16,10 +16,11 @@ nav {
 }
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: rgb(34, 34, 34);
     color: rgb(228, 222, 214);
-    background-color: #00090f;
-    background-image: url("/images/vectorarts/white-diamond-dark.png");
+    background-color: #01131E;
+    background-image: url("/images/vectorarts/white-diamond-dark.png"); 
+    
+
 }
 a:link, a:visited {
     color: #3F87B0;
