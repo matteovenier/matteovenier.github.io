@@ -9,10 +9,11 @@ header{
     background-color: rgb(0, 0, 0);padding: 10px; 
 }
 nav {
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    text-align: center; font-size:18px;
+    padding-bottom: 30px; padding-top:10px;
     border-radius: 5px;
-    
+    align-items: center;
 }
 body {
     font-family:'Courier New', Courier, monospace;
@@ -27,6 +28,10 @@ a:link, a:visited {
     text-decoration:underline;
     text-underline-offset: 4px;
 }
+a:link:hover{
+    font-weight: bold;
+    text-underline-offset: 2px;
+}
 h1 {
     color: #acacac;
     text-align: center;
@@ -34,4 +39,7 @@ h1 {
 p {
     padding: 3px;
     
+}
+span{
+    padding-left: 10px;
 }
