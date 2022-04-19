@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
 .container {
  margin-left:5%;margin-right:5%;
  margin-top:10px;margin-bottom:5%;
@@ -15,16 +22,25 @@ nav {
     border-radius: 5px;
     align-items: center;
 }
+.text{
+    float: left; width:60%;
+}
+.images{
+    float: right; width: 40%;
+}
 body {
     font-family:'Courier New', Courier, monospace;
-    color: rgb(228, 222, 214);
-    background-color: #01131E;
-    background-image: url("/images/vectorarts/white-diamond-dark.png"); 
-    
+    color: rgb(178, 184, 185); font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.856),rgba(255, 255, 255, 0)) fixed no-repeat,url("/images/vectorarts/white-diamond-dark.png"), rgba(253, 1, 1, 0); 
+    background-color: #378599; background-attachment: fixed;
 
 }
+
+
+
+
 a:link, a:visited {
-    color: #3F87B0;
+    color: #1ea9d3;
     text-decoration:underline;
     text-underline-offset: 4px;
 }
@@ -42,4 +58,23 @@ p {
 }
 span{
     padding-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For mobile phones: */
+    .images,.text{
+      width: 100%;
+      font-size: 20px;
+    }
+    div.images{
+        margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      
+    }
+    div.images li{
+        flex: 0 0 auto;
+    }
 }
