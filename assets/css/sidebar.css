@@ -1,0 +1,26 @@
+.sidebar{
+    position: absolute;right: 0;top: 0;
+    overflow: hidden;
+    background-color: black;
+    max-width: 0;
+}
+nav label {
+    position: absolute; right: 0;
+    margin-right: 20px;
+    font-size: 56px;line-height: 3;
+    display: block;
+    cursor: pointer;
+    background: url(/images/vectorarts/white-burger.svg) no-repeat left center;
+    background-size: 30px;
+    padding: 20px 20px 20px 40px;
+}
+input#menutoggle {
+    display: none;
+    
+}
+input#menutoggle:checked ~ label {
+    background-image: url(/images/vectorarts/white-cross.svg) ;
+}
+input#menutoggle:checked ~ .sidebar {
+    max-width: 40%;
+}

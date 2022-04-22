@@ -20,19 +20,24 @@
     ::-webkit-scrollbar-thumb:hover {
     background: rgb(112, 129, 134);
   }
-
+  html{
+    position: relative;
+    min-height: 100%;
+  }
 body {
     
     font-family:'Courier New', Courier, monospace;
-    color: rgb(178, 184, 185); font-size: 18px;
+    color: rgb(253, 255, 230); font-size: 18px;
     background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 13, 31, 0.26)) fixed no-repeat,url("/images/vectorarts/white-diamond-dark.png"), rgba(253, 1, 1, 0); 
     background-color: #378599; background-attachment: fixed;
 
 }
-
+img{
+    margin-bottom: 20px;
+}
 .container {
- margin-left:5%;margin-right:5%;
- margin-top:10px;margin-bottom:5%;
+ margin-left:6%;margin-right:6%;
+ margin-top:10px;margin-bottom:160px;
 }
 ::selection{
     color: #92BED7; background-color: #02273D;
@@ -43,24 +48,24 @@ header{
 nav {
     display: flex;
     text-align: center; font-size:18px;
-    padding-bottom: 30px; padding-top:10px;
+    padding-bottom: 30px; padding-top:30px;
     border-radius: 5px;
     align-items: center;
 }
 footer {
+    position: absolute;bottom:0;left:0;right:0;
+    line-height: 1.5; float: left;
+    font-size: 15px; height:140px;
     background: rgb(27, 27, 27);width: 100%;
     padding: 20px;
 }
 .text{
-    width:60%;
+    float:left;
+    width:70%;
 }
 .images{
-    float: right; width: 40%; padding: 10px;
+    float: right; width: 26%; padding: 10px; margin-bottom:150px;
 }
-
-
-
-
 
 a:link, a:visited {
     color: #1ea9d3;
@@ -72,33 +77,12 @@ a:link:hover{
     text-underline-offset: 2px;
 }
 h1 {
-    color: #acacac;
-    text-align: center;
+    color: #B4D3E4;font-size: 40px;
 }
 p {
-    padding: 3px;
+    padding: 3px;line-height: 1.5;
     
 }
 span{
     padding: 10px;
-}
-
-@media only screen and (max-width: 1024px) {
-    /* For mobile phones: */
-    .images,.text{
-      width: 100%;
-      font-size: 20px;
-      margin-top:10px;
-    }
-    div.images{
-        margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      overflow-x: auto;
-      margin-bottom: 30px;
-    }
-    div.images li{
-        flex: 0 0 auto; 
-    }
 }
