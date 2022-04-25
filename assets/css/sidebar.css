@@ -1,12 +1,15 @@
 .sidebar{
-    position: absolute;right: 0;top: 0;
-    overflow: hidden;
-    background-color: black;
-    max-width: 0;
+    position: fixed;right: 0px;top: 140px; bottom: 0px; z-index: 2;
+    display: block;  
+    overflow: hidden; 
+    background-color: #183a42;
+    max-width: 0; border-radius: 10px;overflow: scroll;
 }
-nav label {
-    position: absolute; right: 0;
-    margin-right: 20px;
+.sidebar .sidebar-content{
+    padding: 40px; 
+}
+label {
+    position: absolute;right: 0;top:60px;
     font-size: 56px;line-height: 3;
     display: block;
     cursor: pointer;
@@ -22,5 +25,5 @@ input#menutoggle:checked ~ label {
     background-image: url(/images/vectorarts/white-cross.svg) ;
 }
 input#menutoggle:checked ~ .sidebar {
-    max-width: 40%;
+    max-width: 50%;
 }

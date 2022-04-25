@@ -5,14 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/main.css">
-    
-
-    <title>Me</title>
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <title>Styletest</title>
 </head>
 <body>
-   
 
     <div class="container">
+
+    <input type="checkbox" id="menutoggle" class="input-toggle" style="text-align:right;">
+    <label for="menutoggle"></label>
+
+    <div class="sidebar">
+        <div class="sidebar-content">
+            
+            <h2>2022</h2>
+            <h3>April</h3>
+            <p>25</p>
+            <h2>2021</h2>
+            <h3>April</h3>
+            <p>13</p>
+            <h2>2020</h2>
+            <h3>April</h3>
+            <p>30</p>
+            <h2>2019</h2>
+            <h3>April</h3>
+            <p>12</p>
+            <h2>2018</h2>
+            <h3>December</h3>
+            <p>3</p>
+
+        </div>
+    </div>
+ 
         <nav>
             <a href="/index.html"><img src="/images/vectorarts/logo-bold-white.svg" style="width:60px; height:60px;" href="index.html"></a>
             <span>
@@ -28,43 +54,46 @@
             
             
             </span>
+         
         </nav>
-
-
+         
+        <!-- Image Visualizer -->
 
         <div class="images">
-            <li><a href="#modal1" ><img src="/images/vectorarts/Firma.png" id="modalimg" alt="Firma" style="width:90%;max-width: 600px; -webkit-filter: invert(1); filter:invert(1);"/></li></a>
-            <li><a href="#modal2" ><img src="/images/vectorarts/logo-bold-white.svg" id="modalimg" alt="Logo" style="width:90%;height:400px"/></a></li>
-            <li><a href="#modal3" ><img src="/images/landscape/IMG_4189-6.jpg" id="modalimg" alt="Landscape" style="width:90%;"/></a></li>
+            <li><a href="#modal1" ><img src="/images/vectorarts/Firma.png" id="img" alt="Firma" style="width:90%;max-width: 600px; -webkit-filter: invert(100%);filter: invert(100%);"/></li></a>
         </div>
 
-        
-        
+        <!-- Modal From Image -->
 
-
+        <div class="popup" id="modal1">
+            <a class="popup__overlay" href="#"></a>
+            <div class="popup__wrapper">
+                <a class="popup__close" href="#">Close</a>
+                <p style="text-align:center;">
+                <img src="/images/vectorarts/Firma.png" alt="Firma" style="width:90%;max-width: 600px; -webkit-filter: invert(1); filter:invert(1);"/>
+                <br>Firma
+                </p>
+            </div>
+        </div>
 
         <div class="text">
+            <h1>Me</h1>
             <p>Hey! I'm Matteo (or Matt) Venier, this is not only a page about me,
                 it's also about my main logos and it's a template used to build other pages on.
-            </p>
-            <p>Etiam interdum, nisl vitae iaculis interdum, ipsum felis efficitur massa, ultricies dignissim lacus erat sit amet risus. Proin volutpat, risus vel finibus luctus, libero urna pharetra magna, vel commodo est arcu sit amet lectus. Duis sed turpis et velit semper vulputate eget vitae urna. Duis et varius est, et finibus sapien. Nullam et magna lectus. Phasellus ut nulla sem. Aliquam at vulputate lacus. Aliquam erat volutpat.
-            </p>
-            <p>Praesent hendrerit molestie ipsum. Nulla aliquam finibus enim, et sagittis urna egestas nec. Nulla ut diam purus. Nunc arcu metus, tincidunt ut fermentum vitae, porttitor sit amet massa. Cras in odio vitae risus ullamcorper lobortis. Ut varius tincidunt libero, ornare molestie eros aliquet a. Cras quis risus eu nisi lacinia faucibus ut et odio. Nullam a gravida purus. Aenean sit amet ante erat.
-            </p>
-            <p>In eu diam at ante vulputate finibus. Integer pretium in ex eget ultrices. Nam ultricies ante sed sagittis malesuada. In et elit cursus, hendrerit erat at, condimentum odio. Mauris facilisis pharetra justo vel commodo. Donec porta erat in vehicula pretium. Mauris risus metus, elementum sed tempus ut, mattis eu justo. Phasellus mollis non nisi sit amet dignissim.
-            </p>
-            <p>Donec elementum, sem quis aliquet maximus, nibh ante vulputate dolor, id auctor libero massa et diam. Pellentesque varius sem sit amet sem efficitur efficitur. Ut molestie, ligula in molestie egestas, elit ipsum imperdiet arcu, eget hendrerit nunc sem a massa. Nullam sed orci diam. Proin consequat neque non erat suscipit, ut hendrerit dui porttitor. Cras quis magna aliquet, laoreet elit sollicitudin, fringilla mauris. Nam a nisi a metus pellentesque faucibus. Nullam placerat nisi ac varius pretium. Pellentesque pellentesque felis id nisi laoreet, ut dictum neque rhoncus.
             </p>
         </div>
         
         
 
     </div>
+
         <footer>
+            <p>
             Website manually created by Matteo Venier, wanna see the source? <br>
             <a href="https://github.com/matteovenier/matteovenier.github.io">Here it is</a> <br>
-            I'm trying to keep javascript out of the pages as much as possible <br>
-            Last update: 2022
+            I'm trying to keep javascript out of the pages as much as possible
+            <span style="float: right; margin-right: 10px;">Last update: 2022</span>
+            </p>
         </footer>
 
     <script src="/assets/javascript/base.js" type="text/javascript"></script>

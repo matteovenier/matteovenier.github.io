@@ -1,8 +1,9 @@
 
 @media only screen and (max-width: 1024px) {
     /* For mobile phones: */
+   
     nav{
-      margin-right: 40px ;
+      margin-right:40px ;
     }
     .images,.text{
       width: 100%;
@@ -26,7 +27,15 @@
     .modal-content {
         width: 100%;
       }
-    img{
+    .popup img{
         max-width:100%;
     }
+    input#menutoggle:checked ~ .sidebar {
+      max-width: 100%;
+      text-align: center; position:fixed; right: 0;
+  }
+  .sidebar{
+    position: absolute; left: 50%; top: 30%; height:80vh;
+    transform: translate(-50%, -20%);
+  }
 }
