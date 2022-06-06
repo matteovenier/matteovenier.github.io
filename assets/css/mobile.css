@@ -35,7 +35,7 @@
       text-align: center; position:fixed; right: 0;
   }
   .sidebar{
-    position: absolute; left: 50%; top: 30%; bottom: 0%;
+    position: absolute; left: 50%; top: 30%; bottom: 10%; height: 80%;
     transform: translate(-50%, -20%);
   }
 }

@@ -1,5 +1,5 @@
 .sidebar{
-    position: fixed;right: 0px;top: 10px; z-index: 2;
+    position: fixed;right: 0px;top: 120px;bottom: 0; z-index: 2;
     display: block;  
     overflow: hidden; 
     background-color: #183a42;
