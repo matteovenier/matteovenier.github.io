@@ -2,11 +2,12 @@
     position: fixed;right: 0px;top: 120px;bottom: 0; z-index: 2;
     display: block;  
     overflow: hidden; 
-    background-color: #183a42;
+    background-color: #0f2024;
     max-width: 0; border-radius: 10px;overflow: scroll;
+    
 }
 .sidebar .sidebar-content{
-    padding: 40px; 
+    padding: 40px;
 }
 label {
     position: absolute;right: 0;top:60px;
