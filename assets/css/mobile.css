@@ -36,6 +36,6 @@
   }
   .sidebar{
     position: absolute; left: 50%; top: 30%; bottom: 10%; height: 80%; width:70%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%); text-align: center;
   }
 }
